@@ -12,3 +12,33 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+header {
+  background-color: #0fb9b1;
+  border: 3px solid #0fb9b1;
+}
+
+.float-container {
+      padding: 50px 0px 0px 50px;
+}
+
+.float-child {
+    width: 40%;
+    height: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid #95a5a6;
+    background-color: rgba(225, 225, 225, .9);
+    margin-right: 50px;
+}
+
+.form-control {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+.lets-cook {
+  
+}
