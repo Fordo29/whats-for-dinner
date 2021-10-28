@@ -6,16 +6,41 @@
   <body>
     <header>
       <h3>What's for Dinner?</h3>
+      <section>
+        <button class="add-recipe">ADD A RECIPE</button>
+      </section>
     </header>
     <main>
-      <h1>What are you looking for?</h1>
-      <form>
-        <input type= "radio" name= "Food" value="SideDish" checked= "checked"/> Side
-        <input type= "radio" name= "Food" value="Main" checked= "checked"/> Main Dish
-        <input type= "radio" name= "Food" value="Dessert" checked= "checked"/> Dessert
-        <input type= "radio" name= "Food" value="Entire Meal" checked= "checked"/> Entire Meal
-        <input type= "submit" name= "LET'S COOK!" value= "LET'S COOK!" />
-      </form>
+      <div class="float-container">
+        <div class="float-child">
+          <div class="pick-meals"></div>
+          <h2>What are you looking for?</h2>
+          <section>
+            <form>
+              <label class="form-control">
+                <input type="radio" name="food" />
+                Side
+              </label><br>
+              <label class="form-control">
+                <input type="radio" name="food" />
+                Main Dish
+              </label><br>
+              <label class="form-control">
+                <input type="radio" name="food" />
+                Dessert
+              </label><br>
+              <label class="form-control">
+                <input type="radio" name="food" />
+                Entire Meal
+              </label><br>
+              <button class="lets-cook" style="margin-top:20px">LET'S COOK!</button>
+            </form>
+          </section>
+        </div>
+        <div class="float-child">
+          <img class="cookpot" src ="assets/cookpot.svg" alt="cookpot">
+        </div>
+      </div>
     </main>
   </body>
   <script type="text/javascript" src="main.js"></script>

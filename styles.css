@@ -5,10 +5,68 @@ teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253 */
+header {
+  background-color: #0fb9b1;
+  background-size: cover;
+  width: 100%;
+  length: 100%;
+  padding: 10px 10px 10px 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.add-recipe {
+    text-align: right;
+    float: right;
+    margin: 3px;
+}
+
 body {
   background-image: url("assets/burger-friends.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.float-container {
+      padding: 50px 0px 0px 50px;
+
+}
+
+.float-child {
+    width: 40%;
+    height: 45%;
+    float: left;
+    padding: 30px 0px 0px 50px;
+    border: 2px solid #95a5a6;
+    background-color: rgba(225, 225, 225, .9);
+    margin-right: 50px;
+
+}
+
+.form-control {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.5;
+  position: relative;
+}
+
+.lets-cook {
+  display: flex;
+  border: 2px solid #0fb9b1;
+  border-radius: 4px;
+  padding: 10px 60px 10px 60px;
+  background-color: #0fb9b1;
+
+}
+
+.cookpot {
+  display: flex;
+  justify-content: center;
+  height:50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 }
