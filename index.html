@@ -5,43 +5,41 @@
   </head>
   <body>
     <header>
-      <h3>What's for Dinner?</h3>
-      <section>
-        <button class="add-recipe">ADD A RECIPE</button>
-      </section>
+      <h3>What's for Dinner?</h3><br>
+      <button class="add-recipe">ADD A RECIPE</button>
     </header>
     <main>
       <div class="float-container">
         <div class="float-child">
           <div class="pick-meals"></div>
-          <h2>What are you looking for?</h2>
+          <h2>What are you looking for?<span class="star">*</span></h2>
           <section>
             <form>
-              <label class="form-control">
-                <input type="radio" name="food" />
-                Side
-              </label><br>
-              <label class="form-control">
+              <label for="form-control">side</label><br>
+                <input type="radio" class="food" id="side">
+              <label class="form-control" id="main">
                 <input type="radio" name="food" />
                 Main Dish
               </label><br>
-              <label class="form-control">
+              <label class="form-control" id="dessert">
                 <input type="radio" name="food" />
                 Dessert
               </label><br>
-              <label class="form-control">
+              <label class="form-control" id="meal">
                 <input type="radio" name="food" />
                 Entire Meal
               </label><br>
-              <button class="lets-cook" style="margin-top:20px">LET'S COOK!</button>
+              <button class="lets-cook" style="margin-top:20px" onclick="displayFood()">LET'S COOK!</button>
             </form>
           </section>
         </div>
         <div class="float-child">
-          <img class="cookpot" src ="assets/cookpot.svg" alt="cookpot">
+          <img class="cookpot" src ="assets/cookpot.svg" alt="cookpot"/>
+          <p class="showFood">Checkbox is CHECKED!</p>
         </div>
       </div>
     </main>
   </body>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="./src/main.js"></script>
+  <script type="text/javascript" src="./src/data.js"></script>
 </html>
