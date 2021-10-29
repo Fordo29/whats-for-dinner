@@ -1,8 +1,3 @@
-
-
-
-
-
 var sides = [
 'Miso Glazed Carrots',
 'Coleslaw',
@@ -32,7 +27,7 @@ var mains = [
 'Margarita Pizza'
 ]
 
-var desserts =
+var desserts = [
 'Apple Pie',
 'Lemon Meringue Pie',
 'Black Forest Cake',
