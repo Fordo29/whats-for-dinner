@@ -82,8 +82,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  height:20%;
-  width: 20%;
+  width: 30%;
   position: absolute;
   margin-top: 180px;
   margin-left: 250px;
@@ -96,15 +95,18 @@ body {
   display: none;
 }
 
-form input[type="radio"] {
-  float: left;
-  width: 50px;
-  margin-right: 10px;
+.showFood {
+  font-style: italic;
+  position: absolute;
+  left: 150px
 }
 
-form label {
-  float: left;
-  width: 100px;
-  line-height: inherit;
-  horizontal-align: middle;
+.show-single-food {
+  font-weight:bolder;
+  font-size: 40px;
+  position: absolute;
+  line-height: 45px;
+  top: 60px;
+  padding: 0px 20px 10px 0px;
+  text-align: center;
 }
