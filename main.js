@@ -58,6 +58,7 @@ var letsCookButton = document.querySelector(".lets-cook");
 var cookpotView = document.querySelector(".cookpot");
 var recipeView = document.querySelector(".showFood");
 var singleFoodView = document.querySelector(".show-single-food");
+// var entireMealView = document.querySelector("")
 
 
 //event listeners
@@ -72,18 +73,18 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
     }
 
-function randomizeFood() {
+function showRandomizeFood() {
   if (sideRadioButton.checked){
     return sides[getRandomIndex(sides)];
   } else if (mainRadioButton.checked) {
     return mains[getRandomIndex(mains)];
   } else if (dessertRadioButton.checked) {
     return desserts[getRandomIndex(desserts)];
-  // } else if (mealRadioButton) {
-  //
-  // }
+  } else if (mealRadioButton.checked) {
+    return `${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${desserts[getRandomIndex(desserts)]} for dessert!`
   }
 }
+
 
 function showFoodView() {
   hide(cookpotView);
@@ -107,6 +108,6 @@ function hide(element) {
 
 function displayFood() {
   // recipeView.innerText = ``;
-  singleFoodView.innerText = randomizeFood();
+  singleFoodView.innerText = showRandomizeFood();
   showFoodView();
 }
