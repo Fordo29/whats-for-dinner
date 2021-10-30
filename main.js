@@ -63,6 +63,9 @@ var singleFoodView = document.querySelector(".show-single-food");
 //event listeners
 letsCookButton.addEventListener("click", displayFood);
 
+//event handler
+//document.addEventListener('load', showCookPot);
+//document.onload = showCookPot();
 
 // Functions
 function getRandomIndex(array) {
@@ -82,26 +85,28 @@ function randomizeFood() {
   }
 }
 
+function showFoodView() {
+  hide(cookpotView);
+  show(recipeView);
+  show(singleFoodView);
+}
+
+function showCookPot() {
+  show(cookpotView);
+  hide(recipeView);
+  hide(singleFoodView);
+}
+
+function show(element) {
+  element.classList.remove('hidden');
+}
+
+function hide(element) {
+  element.classList.add('hidden');
+}
+
 function displayFood() {
   // recipeView.innerText = ``;
   singleFoodView.innerText = randomizeFood();
   showFoodView();
-}
-
-
-
-
-console.log(displayFood());
-
-
-
-function showFoodView() {
-  cookpotView.classList.add('hidden');
-  recipeView.classList.remove('hidden');
-  singleFoodView.classList.remove('hidden');
-}
-
-function showCookPot() {
-  cookpotView.classList.remove('hidden');
-  recipeView.classList.add('hidden');
 }
