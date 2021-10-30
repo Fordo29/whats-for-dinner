@@ -35,11 +35,12 @@ body {
 
 .star {
   color: #ee5253;
-  
+
 }
 
 .float-container {
       padding: 50px 0px 0px 50px;
+      font-family: 'Roboto', sans-serif;
 }
 
 .float-child {
@@ -50,14 +51,16 @@ body {
     border: 2px solid #95a5a6;
     background-color: rgba(225, 225, 225, .9);
     margin-right: 50px;
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 35px;
 }
 
 .form-control {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: .5rem;
   font-weight: bold;
-  line-height: 2.5;
+  line-height: 50px;
   position: relative;
   transform: translate(-50%, -50%);
 }
@@ -68,6 +71,8 @@ body {
   border-radius: 4px;
   padding: 10px 60px 10px 60px;
   background-color: #0fb9b1;
+  margin-top: 30px;
+  border-color: blue;
 
 
 }
@@ -85,4 +90,21 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+form input[type="radio"] {
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+}
+
+form label {
+  float: left;
+  width: 100px;
+  line-height: inherit;
+  horizontal-align: middle;
 }

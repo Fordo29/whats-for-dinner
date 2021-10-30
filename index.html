@@ -14,28 +14,34 @@
           <div class="pick-meals"></div>
           <h2>What are you looking for?<span class="star">*</span></h2>
           <section>
-            <form>
-              <label for="form-control">side</label><br>
-                <input type="radio" class="food" id="side">
-              <label class="form-control" id="main">
-                <input type="radio" name="food" />
+            <div>
+              <label for="side">
+                <input class="form-control" type="radio" id="side" name="food" value="sides"/>
+                Sides
+              </label>
+              <div class="clear"></div>
+              <label for="main">
+                <input class="form-control" type="radio" id="main" name="food"/>
                 Main Dish
-              </label><br>
-              <label class="form-control" id="dessert">
-                <input type="radio" name="food" />
+              </label>
+              <div class="clear"></div>
+              <label for="dessert">
+                <input class="form-control" type="radio" id="dessert" name="food"/>
                 Dessert
-              </label><br>
-              <label class="form-control" id="meal">
-                <input type="radio" name="food" />
-                Entire Meal
-              </label><br>
-              <button class="lets-cook" style="margin-top:20px" onclick="displayFood()">LET'S COOK!</button>
-            </form>
+              </label>
+              <div class="clear"></div>
+              <label for="entire-meal">
+                <input class="form-control" type="radio" id="meal" name="food"/>
+                Entire Meal</label>
+              <div class="clear"></div>
+              <button class="lets-cook">LET'S COOK!</button>
+            </div>
           </section>
         </div>
         <div class="float-child">
           <img class="cookpot" src ="assets/cookpot.svg" alt="cookpot"/>
-          <p class="showFood">Checkbox is CHECKED!</p>
+          <p class="showFood hidden">You should make:</p>
+          <p class="show-single-food hidden"></p>
         </div>
       </div>
     </main>
