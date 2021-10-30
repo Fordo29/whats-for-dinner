@@ -45,24 +45,14 @@ body {
 
 .float-child {
     width: 40%;
-    height: 45%;
+    height: 350px;
     float: left;
-    padding: 30px 0px 0px 50px;
+    padding: 30px 0px 30px 50px;
     border: 2px solid #95a5a6;
     background-color: rgba(225, 225, 225, .9);
     margin-right: 50px;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    line-height: 35px;
-}
-
-.form-control {
-  font-family: 'Roboto', sans-serif;
-  font-size: .5rem;
-  font-weight: bold;
-  line-height: 50px;
-  position: relative;
-  transform: translate(-50%, -50%);
+    line-height: 38px;
 }
 
 .lets-cook {
