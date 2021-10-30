@@ -53,6 +53,7 @@ var mainRadioButton = document.getElementById("main");
 var dessertRadioButton = document.getElementById("dessert");
 var mealRadioButton = document.getElementById("meal");
 var letsCookButton = document.querySelector(".lets-cook");
+var clearButton = document.querySelector(".clear-button");
 
 //views
 var cookpotView = document.querySelector(".cookpot");
@@ -62,6 +63,7 @@ var singleFoodView = document.querySelector(".show-single-food");
 
 //event listeners
 letsCookButton.addEventListener("click", displayFood);
+clearButton.addEventListener("click", showCookPot);
 
 //event handler
 //document.addEventListener('load', showCookPot);
@@ -72,29 +74,33 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
     }
 
-function randomizeFood() {
+function showRandomizeFood() {
   if (sideRadioButton.checked){
     return sides[getRandomIndex(sides)];
   } else if (mainRadioButton.checked) {
     return mains[getRandomIndex(mains)];
   } else if (dessertRadioButton.checked) {
     return desserts[getRandomIndex(desserts)];
-  // } else if (mealRadioButton) {
-  //
-  // }
+  } else if (mealRadioButton.checked) {
+    return `${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${desserts[getRandomIndex(desserts)]} for dessert!`
   }
+  // else {
+  //   return showCookPot();
+  // }
 }
 
 function showFoodView() {
   hide(cookpotView);
   show(recipeView);
   show(singleFoodView);
+  show(clearButton);
 }
 
 function showCookPot() {
   show(cookpotView);
   hide(recipeView);
   hide(singleFoodView);
+  hide(clearButton);
 }
 
 function show(element) {
@@ -106,7 +112,12 @@ function hide(element) {
 }
 
 function displayFood() {
-  // recipeView.innerText = ``;
-  singleFoodView.innerText = randomizeFood();
-  showFoodView();
+  if (!showRandomizeFood()) {
+    showCookPot();
+  } else {
+    singleFoodView.innerText = showRandomizeFood();
+    showFoodView();
+  }
 }
+
+// recipeView.innerText = ``;
