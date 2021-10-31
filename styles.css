@@ -6,23 +6,22 @@ frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253 */
 header {
+  display: flex;
   background-color: #0fb9b1;
   background-size: cover;
   width: 100%;
   length: 100%;
-  padding: 10px 10px 10px 10px;
+  padding-left:20px;
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: space-between;
 }
 
-.add-recipe {
+/* .add-recipe {
     float: right;
     margin: 3px;
     border-radius: 4px;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
     margin-right: 30px
-}
+} */
 
 body {
   background-image: url("assets/burger-friends.jpg");
@@ -39,21 +38,28 @@ body {
 }
 
 .float-container {
-      padding: 50px 0px 0px 50px;
-      font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px 0px 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .float-child {
-    width: 40%;
-    height: 350px;
-    float: left;
-    padding: 30px 0px 30px 50px;
-    border: 2px solid #95a5a6;
-    background-color: rgba(225, 225, 225, .9);
-    margin-right: 50px;
-    font-size: 1.5rem;
-    line-height: 38px;
-    position: relative;
+  width: 40%;
+  height: 350px;
+  padding: 30px 30px 30px 50px;
+  border: 2px solid #95a5a6;
+  background-color: rgba(225, 225, 225, .9);
+  font-size: 1.5rem;
+  line-height: 38px;
+
+}
+
+.white-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .lets-cook {
@@ -81,7 +87,7 @@ body {
 .cookpot {
   display: flex;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
   width: 30%;
   position: absolute;
   margin-top: 180px;
@@ -98,15 +104,19 @@ body {
 .showFood {
   font-style: italic;
   position: absolute;
-  left: 150px
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  /* left: 180px; */
 }
 
 .show-single-food {
   font-weight:bolder;
   font-size: 40px;
+  max-width: 75%;
   position: absolute;
   line-height: 45px;
-  top: 60px;
-  padding: 0px 20px 10px 0px;
+  padding-top: 90px;
   text-align: center;
+  margin: auto;
 }
