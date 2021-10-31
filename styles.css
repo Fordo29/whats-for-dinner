@@ -53,7 +53,6 @@ body {
   background-color: rgba(225, 225, 225, .9);
   font-size: 1.5rem;
   line-height: 38px;
-
 }
 
 .white-box {
@@ -87,12 +86,10 @@ body {
 .cookpot {
   display: flex;
   justify-content: center;
-  /* text-align: center; */
   width: 30%;
   position: absolute;
   margin-top: 180px;
   margin-left: 250px;
-  margin-right: 30px;
   margin-bottom: 30px;
   transform: translate(-50%, -50%);
 }
@@ -106,8 +103,7 @@ body {
   position: absolute;
   text-align: center;
   margin: auto;
-  padding-top: 30px;
-  /* left: 180px; */
+  padding-top: 50px;
 }
 
 .show-single-food {
@@ -115,8 +111,8 @@ body {
   font-size: 40px;
   max-width: 75%;
   position: absolute;
-  line-height: 45px;
-  padding-top: 90px;
+  line-height: 50px;
+  padding-top: 120px;
   text-align: center;
   margin: auto;
 }

@@ -60,16 +60,22 @@ var cookpotView = document.querySelector(".cookpot");
 var recipeView = document.querySelector(".showFood");
 var singleFoodView = document.querySelector(".show-single-food");
 
-
-
 //event listeners
 letsCookButton.addEventListener("click", displayFood);
 clearButton.addEventListener("click", showCookPot);
 
 // Functions
+function show(element) {
+  element.classList.remove('hidden');
+}
+
+function hide(element) {
+  element.classList.add('hidden');
+}
+
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
-    }
+}
 
 function showRandomizeFood() {
   if (sideRadioButton.checked){
@@ -97,13 +103,6 @@ function showCookPot() {
   hide(clearButton);
 }
 
-function show(element) {
-  element.classList.remove('hidden');
-}
-
-function hide(element) {
-  element.classList.add('hidden');
-}
 
 function displayFood() {
   if (!showRandomizeFood()) {
