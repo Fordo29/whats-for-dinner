@@ -1,3 +1,4 @@
+// Food Item Arrays
 var sides = [
   'Miso Glazed Carrots',
   'Coleslaw',
